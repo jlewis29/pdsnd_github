@@ -10,10 +10,10 @@ Explore U.S. Bikeshare Data
 This project allows a user to work interactively with a database of bikeshare usage information for various U.S. cities.
 
 ### Files used
-bikeshare_project_Lewis, JT.py
-chicago.csv
-new_york_city.csv
-washington.csv
+* bikeshare_project_Lewis, JT.py
+* chicago.csv
+* new_york_city.csv
+* washington.csv
 
 ### Credits
 N/A
