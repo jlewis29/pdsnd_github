@@ -72,9 +72,14 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     #NOTE: this function is assuming good inputs are provided via get_filters() function
-    
-    # load data file into a dataframe
-    df = pd.read_csv(CITY_DATA[city])
+    try:
+        # load data file into a dataframe
+        df = pd.read_csv(CITY_DATA[city])
+    except:
+        # throw error if city data CSV doesn't exist
+        print('Error! No data available for selected city.')
+        # return empty DataFrame
+        return pd.DataFrame()
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     # add month and day of week columns 
