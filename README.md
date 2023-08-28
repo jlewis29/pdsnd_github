@@ -16,5 +16,4 @@ This project allows a user to work interactively with a database of bikeshare us
 * washington.csv
 
 ### Credits
-N/A
-
+Credit to Udacity for training me on the skills necessary to get this project done!
